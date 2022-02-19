@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ahmad.xogame.GameController">
+    <children>
+        <GridPane hgap="15.0" layoutX="153.0" layoutY="138.0" prefHeight="252.0" prefWidth="295.0" vgap="15.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="one" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="123.0" prefWidth="144.0">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="two" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="140.0" prefWidth="210.0" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="three" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="116.0" prefWidth="176.0" GridPane.columnIndex="2">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="four" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="111.0" prefWidth="203.0" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="five" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="109.0" prefWidth="139.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="six" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="121.0" prefWidth="117.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="seven" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="101.0" prefWidth="174.0" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="eight" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="99.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+                <Button fx:id="nine" mnemonicParsing="false" onAction="#Main" opacity="0.0" prefHeight="114.0" prefWidth="143.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="25.0" />
+                    </font></Button>
+            </children>
+        </GridPane>
+        <Button fx:id="mainMenu" layoutX="34.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="44.0" prefWidth="101.0" text="Main Menu">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="restart" layoutX="471.0" layoutY="31.0" mnemonicParsing="false" onAction="#reset" prefHeight="44.0" prefWidth="85.0" text="Restart">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Line endX="59.0" layoutX="389.0" layoutY="220.0" startX="-236.0" />
+        <Line endX="60.0" layoutX="388.0" layoutY="311.0" startX="-235.0" />
+        <Line endX="-100.0" endY="304.0" layoutX="348.0" layoutY="96.0" startX="-100.0" startY="32.0" />
+        <Line endX="-100.0" endY="308.0" layoutX="455.0" layoutY="94.0" startX="-100.0" startY="36.0" />
+        <Button fx:id="mode" layoutX="469.0" layoutY="94.0" mnemonicParsing="false" onAction="#toggleMode" prefHeight="44.0" prefWidth="89.0" text="change mode" />
+        <HBox layoutX="181.0" layoutY="31.0" prefHeight="55.0" prefWidth="218.0" spacing="20.0">
+            <children>
+                <ImageView fitHeight="64.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@images/player.png"/>
+                </ImageView>
+                <ImageView fitHeight="63.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@images/vs.png"/>
+                </ImageView>
+                <ImageView fx:id="otherPlayerImage" fitHeight="67.0" fitWidth="75.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <Image url="@images/player.png"/>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <effect>
+                <Blend opacity="0.4" />
+            </effect>
+        </HBox>
+    </children>
+</AnchorPane>

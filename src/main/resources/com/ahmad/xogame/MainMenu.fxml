@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ahmad.xogame.MainMenuController">
+    <children>
+        <Text layoutX="201.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To X-O" wrappingWidth="197.13671875">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Text>
+        <Button fx:id="startButton" layoutX="244.0" layoutY="142.0" mnemonicParsing="false" onAction="#startGame" text="Start Game">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <Label fx:id="label" layoutX="230.0" layoutY="211.0" prefHeight="9.0" prefWidth="136.0" text="made by : ahmad khaled" />
+    </children>
+</AnchorPane>
